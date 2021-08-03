@@ -1,0 +1,6 @@
+{
+  "bucket": "liveme-video-test",
+  "folder": "shard",
+  "output": "result/result-1.webm",
+  "prefix": "record_demo_"
+}

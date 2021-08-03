@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  liveme-s3-merger
+
+Resources:
+  LivemeS3Merger:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: liveme_s3_merger/
+      Handler: app.lambda_handler
+      Runtime: python3.8
+      Timeout: 60
+      MemorySize: 1024
+
+             
